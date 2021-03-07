@@ -19,7 +19,7 @@ class MainPage extends StatelessWidget {
           children: [
             InkWell(
               onTap: () {
-                navigateToSubPage(context);
+                navigateToMDMA(context);
               },
               child: Container(
                   child: ClipRRect(
@@ -29,7 +29,9 @@ class MainPage extends StatelessWidget {
               )),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                navigateToAlcohol(context);
+              },
               child: Container(
                   child: ClipRRect(
                 child: Image.asset(
@@ -70,12 +72,16 @@ class MainPage extends StatelessWidget {
     );
   }
 
-  Future navigateToSubPage(context) async {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => SubPage()));
+  Future navigateToMDMA(context) async {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => MDMA()));
+  }
+
+  Future navigateToAlcohol(context) async {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => Alcohol()));
   }
 }
 
-class SubPage extends StatelessWidget {
+class MDMA extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -91,6 +97,45 @@ class SubPage extends StatelessWidget {
                 ),
               ),
             ),
+            InkWell(
+              onTap: () {},
+              child: new Text("3,4-Methyl​enedioxy​methamphetamine"),
+            ),
+            InkWell(
+              onTap: () {},
+              child: new Text('(AKA: MDMA, Ecstasy, Molly)'),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class Alcohol extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("Bon Voyage"), centerTitle: true),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            InkWell(
+              onTap: () {},
+              child: Container(
+                child: ClipRRect(
+                  child: Image.asset('images/alcohol-structure.png'),
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: new Text("Ethanol"),
+            ),
+            InkWell(
+              onTap: () {},
+              child: new Text('(AKA: Alcohol)'),
+            )
           ],
         ),
       ),

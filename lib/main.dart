@@ -86,8 +86,10 @@ class SubPage extends StatelessWidget {
             InkWell(
               onTap: () {},
               child: Container(
-                  child: ClipRRect(
-                      child: Image.asset('images/mdma-structure.jpg'))),
+                child: ClipRRect(
+                  child: Image.asset('images/mdma-structure.jpg'),
+                ),
+              ),
             ),
           ],
         ),

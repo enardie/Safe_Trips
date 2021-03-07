@@ -137,7 +137,7 @@ class Alcohol extends StatelessWidget {
             ),
             InkWell(
               child: new Text(
-                'Men: 4 units per day, 14- units per week. Women: 3 units per day, 7 units per week',
+                'Men: 4 units per day, 14 units per week. Women: 3 units per day, 7 units per week',
                 style: TextStyle(
                   fontSize: 20,
                   fontFamily: 'OpenSans',
@@ -204,6 +204,70 @@ class Alcohol extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20,
                   fontFamily: 'OpenSans',
+                ),
+              ),
+            ),
+            InkWell(
+              child: new Text(
+                'Potential Side-Effects:',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            InkWell(
+              child: new Text(
+                'Harmful: intoxication, impairment of cognitive, memory, motor, and sensory function, intoxication and generalized depression of central nervous system function.',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'OpenSans',
+                ),
+              ),
+            ),
+            InkWell(
+              child: new Text(
+                'Other: happiness and euphoria, decreased anxiety, increased sociability, and sedation.',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'OpenSans',
+                ),
+              ),
+            ),
+            InkWell(
+              child: new Text(
+                'Interaction with other drugs',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            InkWell(
+              child: new Text(
+                'Low risk: LSD, psilocybin, DMT, Mescaline, caffeine',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'OpenSans',
+                ),
+              ),
+            ),
+            InkWell(
+              child: new Text(
+                'Unsafe to mix: cocaine, MDMA, amphetamines',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'OpenSans',
+                ),
+              ),
+            ),
+            InkWell(
+              child: new Text(
+                'Highly dangerous: ketamine, opioids, benzodiazepines',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'OpenSans',
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),

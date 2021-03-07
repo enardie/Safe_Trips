@@ -118,11 +118,15 @@ class Alcohol extends StatelessWidget {
               ),
             ),
             InkWell(
-              child: new Text(
-                'A psychoactive drug which is most commonly found in drinks (beer, wine) and distilled spirits (vodka, tequila). It is the oldest and most commonly used drug which is often used to reach a state of drunkenness.',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: 'OpenSans',
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: new Text(
+                  'A psychoactive drug which is most commonly found in drinks (beer, wine) and distilled spirits (vodka, tequila). It is the oldest and most commonly used drug which is often used to reach a state of drunkenness.',
+                  style: TextStyle(
+                    fontSize: 20,
+                    //margin: const EdgeInsets.only(left: 20.0, right: 20.0),
+                    fontFamily: 'OpenSans',
+                  ),
                 ),
               ),
             ),
@@ -136,11 +140,14 @@ class Alcohol extends StatelessWidget {
               ),
             ),
             InkWell(
-              child: new Text(
-                'Men: 4 units per day, 14 units per week. Women: 3 units per day, 7 units per week',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: 'OpenSans',
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: new Text(
+                  'Men: 4 units per day, 14 units per week. Women: 3 units per day, 7 units per week',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                  ),
                 ),
               ),
             ),
@@ -154,56 +161,74 @@ class Alcohol extends StatelessWidget {
               ),
             ),
             InkWell(
-              child: new Text(
-                '- Take into account how fast and how much alcohol you are consuming',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: 'OpenSans',
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: new Text(
+                  '- Take into account how fast and how much alcohol you are consuming',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                  ),
                 ),
               ),
             ),
             InkWell(
-              child: new Text(
-                '- Drink water between each drink to avoid dehydration',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: 'OpenSans',
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: new Text(
+                  '- Drink water between each drink to avoid dehydration',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                  ),
                 ),
               ),
             ),
             InkWell(
-              child: new Text(
-                '- Do not drink before or when driving or when you need to make important decisions',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: 'OpenSans',
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: new Text(
+                  '- Do not drink before or when driving or when you need to make important decisions',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                  ),
                 ),
               ),
             ),
             InkWell(
-              child: new Text(
-                '- Do not drink if you are pregnant or breastfeeding. ',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: 'OpenSans',
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: new Text(
+                  '- Do not drink if you are pregnant or breastfeeding. ',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                  ),
                 ),
               ),
             ),
             InkWell(
-              child: new Text(
-                '- Delay drinking until you are in at least your late teens to minimize the effect on brain development (younger people should not take more than 2 units a day, 6 per week)',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: 'OpenSans',
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: new Text(
+                  '- Delay drinking until you are in at least your late teens to minimize the effect on brain development (younger people should not take more than 2 units a day, 6 per week)',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                  ),
                 ),
               ),
             ),
             InkWell(
-              child: new Text(
-                '- Drinking only one unit for every hour is ideal',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: 'OpenSans',
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: new Text(
+                  '- Drinking only one unit for every hour is ideal',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                  ),
                 ),
               ),
             ),
@@ -217,20 +242,26 @@ class Alcohol extends StatelessWidget {
               ),
             ),
             InkWell(
-              child: new Text(
-                'Harmful: intoxication, impairment of cognitive, memory, motor, and sensory function, intoxication and generalized depression of central nervous system function.',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: 'OpenSans',
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: new Text(
+                  'Harmful: intoxication, impairment of cognitive, memory, motor, and sensory function, intoxication and generalized depression of central nervous system function.',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                  ),
                 ),
               ),
             ),
             InkWell(
-              child: new Text(
-                'Other: happiness and euphoria, decreased anxiety, increased sociability, and sedation.',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: 'OpenSans',
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: new Text(
+                  'Other: happiness and euphoria, decreased anxiety, increased sociability, and sedation.',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                  ),
                 ),
               ),
             ),
@@ -244,30 +275,39 @@ class Alcohol extends StatelessWidget {
               ),
             ),
             InkWell(
-              child: new Text(
-                'Low risk: LSD, psilocybin, DMT, Mescaline, caffeine',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: 'OpenSans',
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: new Text(
+                  'Low risk: LSD, psilocybin, DMT, Mescaline, caffeine',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                  ),
                 ),
               ),
             ),
             InkWell(
-              child: new Text(
-                'Unsafe to mix: cocaine, MDMA, amphetamines',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: 'OpenSans',
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: new Text(
+                  'Unsafe to mix: cocaine, MDMA, amphetamines',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                  ),
                 ),
               ),
             ),
             InkWell(
-              child: new Text(
-                'Highly dangerous: ketamine, opioids, benzodiazepines',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: 'OpenSans',
-                  fontWeight: FontWeight.bold,
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: new Text(
+                  'Highly dangerous: ketamine, opioids, benzodiazepines',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ),

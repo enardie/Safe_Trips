@@ -19,7 +19,7 @@ class _NavState extends State<Nav> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Bon Voyage"), centerTitle: true, backgroundColor: Colors.pink,),
+      appBar: AppBar(title: Text("Safe Trips"), centerTitle: true, backgroundColor: Colors.pink,),
       body: tabs[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
        currentIndex: _currentIndex,

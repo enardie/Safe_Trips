@@ -171,10 +171,22 @@ class Alcohol extends StatelessWidget {
               ),
             ),
             InkWell(
-              child: new Text("Ethanol"),
+              child: new Text(
+                "Ethanol",
+                style: TextStyle(fontSize: 20, fontFamily: 'OpenSans'),
+              ),
             ),
             InkWell(
-              child: new Text('(AKA: Alcohol)'),
+              child: new Text(
+                '(AKA: Alcohol)',
+                style: TextStyle(fontSize: 20, fontFamily: 'OpenSans'),
+              ),
+            ),
+            InkWell(
+              child: new Text(
+                'General Description: ',
+                style: TextStyle(fontSize: 20, fontFamily: 'OpenSans'),
+              ),
             )
           ],
         ),

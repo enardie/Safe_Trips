@@ -51,7 +51,9 @@ class MainPage extends StatelessWidget {
               )),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                navigateToHeroin(context);
+              },
               child: Container(
                   child: ClipRRect(
                 child: Image.asset(
@@ -101,6 +103,10 @@ Future navigateToAlcohol(context) async {
 
 Future navigateToCocaine(context) async {
   Navigator.push(context, MaterialPageRoute(builder: (context) => Cocaine()));
+}
+
+Future navigateToHeroin(context) async {
+  Navigator.push(context, MaterialPageRoute(builder: (context) => Heroin()));
 }
 
 class MDMA extends StatelessWidget {
@@ -179,6 +185,34 @@ class Cocaine extends StatelessWidget {
             ),
             InkWell(
               child: new Text('(AKA: Coke, Blow, Crack)'),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class Heroin extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("Bon Voyage"), centerTitle: true),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            InkWell(
+              child: Container(
+                child: ClipRRect(
+                  child: Image.asset('images/heroin-structure.png'),
+                ),
+              ),
+            ),
+            InkWell(
+              child: new Text("Diacetylmorphine"),
+            ),
+            InkWell(
+              child: new Text('(AKA: Heroin)'),
             )
           ],
         ),

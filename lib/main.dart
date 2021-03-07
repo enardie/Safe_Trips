@@ -19,7 +19,7 @@ class MainPage extends StatelessWidget {
           children: [
             InkWell(
               onTap: () {
-                navigateToSubPage(context);
+                navigateToMDMA(context);
               },
               child: Container(
                   child: ClipRRect(
@@ -29,7 +29,9 @@ class MainPage extends StatelessWidget {
               )),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                navigateToAlcohol(context);
+              },
               child: Container(
                   child: ClipRRect(
                 child: Image.asset(
@@ -38,7 +40,9 @@ class MainPage extends StatelessWidget {
               )),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                navigateToCocaine(context);
+              },
               child: Container(
                   child: ClipRRect(
                 child: Image.asset(
@@ -67,15 +71,39 @@ class MainPage extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          new BottomNavigationBarItem(
+            icon: new Icon(Icons.home),
+            label: 'Home',
+          ),
+          new BottomNavigationBarItem(
+            icon: new Icon(Icons.explicit),
+            label: 'Emergency',
+          ),
+          new BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+          )
+        ],
+      ),
     );
-  }
-
-  Future navigateToSubPage(context) async {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => SubPage()));
   }
 }
 
-class SubPage extends StatelessWidget {
+Future navigateToMDMA(context) async {
+  Navigator.push(context, MaterialPageRoute(builder: (context) => MDMA()));
+}
+
+Future navigateToAlcohol(context) async {
+  Navigator.push(context, MaterialPageRoute(builder: (context) => Alcohol()));
+}
+
+Future navigateToCocaine(context) async {
+  Navigator.push(context, MaterialPageRoute(builder: (context) => Cocaine()));
+}
+
+class MDMA extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -84,13 +112,74 @@ class SubPage extends StatelessWidget {
         child: Column(
           children: [
             InkWell(
-              onTap: () {},
               child: Container(
                 child: ClipRRect(
-                  child: Image.asset('images/mdma-structure.jpg'),
+                  child: Image.asset('images/mdma-structure.png'),
                 ),
               ),
             ),
+            InkWell(
+              child: new Text("3,4-Methyl​enedioxy​methamphetamine"),
+            ),
+            InkWell(
+              child: new Text('(AKA: MDMA, Ecstasy, Molly)'),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class Alcohol extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("Bon Voyage"), centerTitle: true),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            InkWell(
+              child: Container(
+                child: ClipRRect(
+                  child: Image.asset('images/alcohol-structure.png'),
+                ),
+              ),
+            ),
+            InkWell(
+              child: new Text("Ethanol"),
+            ),
+            InkWell(
+              child: new Text('(AKA: Alcohol)'),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class Cocaine extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("Bon Voyage"), centerTitle: true),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            InkWell(
+              child: Container(
+                child: ClipRRect(
+                  child: Image.asset('images/cocaine-structure.png'),
+                ),
+              ),
+            ),
+            InkWell(
+              child: new Text("Cocaine"),
+            ),
+            InkWell(
+              child: new Text('(AKA: Coke, Blow, Crack)'),
+            )
           ],
         ),
       ),

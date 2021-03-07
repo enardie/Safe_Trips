@@ -17,13 +17,12 @@ class MainPage extends StatelessWidget {
       title: 'Bon Voyage',
       home:
 
-
-      // new Column(
-      //   children: <Widget>[
+          // new Column(
+          //   children: <Widget>[
           Nav(),
 
-        // ]
-      );
+      // ]
+    );
     //);
   }
 }
@@ -139,6 +138,69 @@ class Alcohol extends StatelessWidget {
             InkWell(
               child: new Text(
                 'Men: 4 units per day, 14- units per week. Women: 3 units per day, 7 units per week',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'OpenSans',
+                ),
+              ),
+            ),
+            InkWell(
+              child: new Text(
+                'Harm Reduction:',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            InkWell(
+              child: new Text(
+                '- Take into account how fast and how much alcohol you are consuming',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'OpenSans',
+                ),
+              ),
+            ),
+            InkWell(
+              child: new Text(
+                '- Drink water between each drink to avoid dehydration',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'OpenSans',
+                ),
+              ),
+            ),
+            InkWell(
+              child: new Text(
+                '- Do not drink before or when driving or when you need to make important decisions',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'OpenSans',
+                ),
+              ),
+            ),
+            InkWell(
+              child: new Text(
+                '- Do not drink if you are pregnant or breastfeeding. ',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'OpenSans',
+                ),
+              ),
+            ),
+            InkWell(
+              child: new Text(
+                '- Delay drinking until you are in at least your late teens to minimize the effect on brain development (younger people should not take more than 2 units a day, 6 per week)',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'OpenSans',
+                ),
+              ),
+            ),
+            InkWell(
+              child: new Text(
+                '- Drinking only one unit for every hour is ideal',
                 style: TextStyle(
                   fontSize: 20,
                   fontFamily: 'OpenSans',

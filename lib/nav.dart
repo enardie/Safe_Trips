@@ -19,12 +19,14 @@ class _NavState extends State<Nav> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Bon Voyage"), centerTitle: true, backgroundColor: Colors.pink,),
+      appBar: AppBar(title: Text('Bon Voyage', style: TextStyle(fontSize: 25),),
+        centerTitle: true,
+        //new Text('Hello Macaw',style: TextStyle(fontSize: 16.0,fontWeight: FontWeight.bold),),
+        backgroundColor: Colors.pink,),
       body: tabs[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
        currentIndex: _currentIndex,
       type: BottomNavigationBarType.fixed,
-      iconSize: 30,
       items: [
         BottomNavigationBarItem(
           icon: new Icon(Icons.home),

@@ -87,7 +87,7 @@ class Alcohol extends StatelessWidget {
               child: new Text(
                 "Ethanol",
                 style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 40,
                     fontFamily: 'OpenSans',
                     fontWeight: FontWeight.bold),
               ),
@@ -96,14 +96,14 @@ class Alcohol extends StatelessWidget {
               child: new Text(
                 '(AKA: Alcohol)',
                 style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 30,
                     fontFamily: 'OpenSans',
                     fontWeight: FontWeight.bold),
               ),
             ),
             InkWell(
               child: new Text(
-                'General Description: ',
+                'General Description:',
                 style: TextStyle(
                     fontSize: 20,
                     fontFamily: 'OpenSans',
@@ -112,7 +112,25 @@ class Alcohol extends StatelessWidget {
             ),
             InkWell(
               child: new Text(
-                'A psychoactive drug which is most commonly found in drinks (beer, wine) and distilled spirits (vodka, tequila). It is the oldest and most commonly used drug which is often used to reach a state of drunkennes',
+                'A psychoactive drug which is most commonly found in drinks (beer, wine) and distilled spirits (vodka, tequila). It is the oldest and most commonly used drug which is often used to reach a state of drunkenness.',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'OpenSans',
+                ),
+              ),
+            ),
+            InkWell(
+              child: new Text(
+                'Recommended Dosage:',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            InkWell(
+              child: new Text(
+                'Men: 4 units per day, 14- units per week. Women: 3 units per day, 7 units per week',
                 style: TextStyle(
                   fontSize: 20,
                   fontFamily: 'OpenSans',

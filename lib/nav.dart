@@ -19,14 +19,12 @@ class _NavState extends State<Nav> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Bon Voyage', style: TextStyle(fontSize: 25),),
-        centerTitle: true,
-        //new Text('Hello Macaw',style: TextStyle(fontSize: 16.0,fontWeight: FontWeight.bold),),
-        backgroundColor: Colors.pink,),
+      appBar: AppBar(title: Text("Bon Voyage"), centerTitle: true, backgroundColor: Colors.pink,),
       body: tabs[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
        currentIndex: _currentIndex,
       type: BottomNavigationBarType.fixed,
+      iconSize: 30,
       items: [
         BottomNavigationBarItem(
           icon: new Icon(Icons.home),
@@ -73,14 +71,14 @@ class _ButtonState extends State<Button> {
           children: [
             InkWell(
               onTap: () {
-                navigateToMDMA(context);
+                navigateToMarijuana(context);
               },
               child: Container(
                   child: ClipRRect(
-                    child: Image.asset(
-                      'images/mdma.jpg',
-                    ),
-                  )),
+                child: Image.asset(
+                  'images/marijuana.jpg',
+                ),
+              )),
             ),
             InkWell(
               onTap: () {
@@ -88,21 +86,21 @@ class _ButtonState extends State<Button> {
               },
               child: Container(
                   child: ClipRRect(
-                    child: Image.asset(
-                      'images/alcohol.jpg',
-                    ),
-                  )),
+                child: Image.asset(
+                  'images/alcohol.jpg',
+                ),
+              )),
             ),
             InkWell(
               onTap: () {
-                navigateToCocaine(context);
+                navigateToMDMA(context);
               },
               child: Container(
                   child: ClipRRect(
-                    child: Image.asset(
-                      'images/cocaine.jpg',
-                    ),
-                  )),
+                child: Image.asset(
+                  'images/mdma.jpg',
+                ),
+              )),
             ),
             InkWell(
               onTap: () {
@@ -110,25 +108,25 @@ class _ButtonState extends State<Button> {
               },
               child: Container(
                   child: ClipRRect(
-                    child: Image.asset(
-                      'images/heroin.jpg',
-                    ),
-                  )),
+                child: Image.asset(
+                  'images/heroin.jpg',
+                ),
+              )),
             ),
             InkWell(
               onTap: () {
-                navigateToMarijuana(context);
+                navigateToCocaine(context);
               },
               child: Container(
                   child: ClipRRect(
-                    child: Image.asset(
-                      'images/marijuana.jpg',
-                    ),
-                  )),
+                child: Image.asset(
+                  'images/cocaine.jpg',
+                ),
+              )),
             ),
           ],
         ),
-      ),/*, m*/
+      ), /*, m*/
     );
   }
 }

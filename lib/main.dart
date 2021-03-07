@@ -86,21 +86,39 @@ class Alcohol extends StatelessWidget {
             InkWell(
               child: new Text(
                 "Ethanol",
-                style: TextStyle(fontSize: 20, fontFamily: 'OpenSans'),
+                style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                    fontWeight: FontWeight.bold),
               ),
             ),
             InkWell(
               child: new Text(
                 '(AKA: Alcohol)',
-                style: TextStyle(fontSize: 20, fontFamily: 'OpenSans'),
+                style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                    fontWeight: FontWeight.bold),
               ),
             ),
             InkWell(
               child: new Text(
                 'General Description: ',
-                style: TextStyle(fontSize: 20, fontFamily: 'OpenSans'),
+                style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'OpenSans',
+                    fontWeight: FontWeight.bold),
               ),
-            )
+            ),
+            InkWell(
+              child: new Text(
+                'A psychoactive drug which is most commonly found in drinks (beer, wine) and distilled spirits (vodka, tequila). It is the oldest and most commonly used drug which is often used to reach a state of drunkennes',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'OpenSans',
+                ),
+              ),
+            ),
           ],
         ),
       ),

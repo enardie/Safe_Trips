@@ -7,10 +7,64 @@ class Nav extends StatefulWidget {
 }
 
 class _NavState extends State<Nav> {
+
+  int _currentIndex = 0;
+  final tabs = [
+    Center(child: Text('Home')),
+    Center(child: Text('Emergency')),
+    Center(child: Text('Search')),
+    Center(child: Text('More')),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Bon Voyage"), centerTitle: true, backgroundColor: Colors.pink,),
+      bottomNavigationBar: BottomNavigationBar(
+       currentIndex: _currentIndex,
+      type: BottomNavigationBarType.fixed,
+      iconSize: 30,
+      items: [
+        BottomNavigationBarItem(
+          icon: new Icon(Icons.home),
+          label: 'Home',
+          backgroundColor: Colors.black26,
+      ),
+        BottomNavigationBarItem(
+          icon: new Icon(Icons.explicit),
+          label: 'Emergency',
+          backgroundColor: Colors.black26,
+      ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.search),
+          label: 'Search',
+          backgroundColor: Colors.black26
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.widgets_sharp),
+          label: 'More',
+          backgroundColor: Colors.black26,
+        ),
+        ],
+        onTap: (index) {
+         setState(() {
+           _currentIndex = index;
+         });
+        }
+       ),
+    );
+  }
+}
+
+class Button extends StatefulWidget {
+  @override
+  _ButtonState createState() => _ButtonState();
+}
+
+class _ButtonState extends State<Button> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -72,33 +126,7 @@ class _NavState extends State<Nav> {
           ],
         ),
       ),/*, m*/
-      bottomNavigationBar: BottomNavigationBar(
-       currentIndex: 0,
-      items: [
-        BottomNavigationBarItem(
-          icon: new Icon(Icons.home),
-          label: 'Home',
-          backgroundColor: Colors.black26,
-      ),
-        BottomNavigationBarItem(
-          icon: new Icon(Icons.explicit),
-          label: 'Emergency',
-          backgroundColor: Colors.black26,
-      ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.search),
-          label: 'Search',
-          backgroundColor: Colors.black26
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.widgets_sharp),
-          label: 'More',
-          backgroundColor: Colors.black26,
-        ),
-        ],
-       ),
     );
   }
 }
-
 

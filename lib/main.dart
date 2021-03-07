@@ -15,13 +15,16 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Bon Voyage',
-      home: new Column(
-        children: <Widget>[
+      home:
+
+
+      // new Column(
+      //   children: <Widget>[
           Nav(),
-          Button(),
-        ]
-      )
-    );
+
+        // ]
+      );
+    //);
   }
 }
 

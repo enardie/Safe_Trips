@@ -10,7 +10,7 @@ class _NavState extends State<Nav> {
 
   int _currentIndex = 0;
   final tabs = [
-    Center(child: Text('Home')),
+    Center(child: Button()),
     Center(child: Text('Emergency')),
     Center(child: Text('Search')),
     Center(child: Text('More')),
@@ -20,6 +20,7 @@ class _NavState extends State<Nav> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Bon Voyage"), centerTitle: true, backgroundColor: Colors.pink,),
+      body: tabs[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
        currentIndex: _currentIndex,
       type: BottomNavigationBarType.fixed,

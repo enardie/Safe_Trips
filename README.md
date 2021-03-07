@@ -1,16 +1,19 @@
-# bon_voyage
+Hello!
 
-A new Flutter application.
+Thank you for taking the time to check out our first baby,
+this flutter app that Kat and I (Nathalia) built up in about 24 hours for
+AthenaHacks 2021 with absolutely no previous knowledge whatsoever with Dart
+or Flutter (or any other language really, but that's another can of worms).
 
-## Getting Started
+The name of this app is Bon Voyage and its purpose is harm reduction through
+accurate and direct information. If someone took the decision of doing
+any type of drug, they should not only be aware of the consequences of
+their actions, but also have the information needed to navigate the
+situation with minimum harm as possible.
 
-This project is a starting point for a Flutter application.
+We still have a lot of dreams and plans for this app and still plan to
+continue it and add many things more—but it will be done without the time
+constraints of a hackathon hahaha.
 
-A few resources to get you started if this is your first Flutter project:
+I hope you enjoy our not-the-most-beautiful but still very charming son!
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

@@ -62,7 +62,9 @@ class MainPage extends StatelessWidget {
               )),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                navigateToMarijuana(context);
+              },
               child: Container(
                   child: ClipRRect(
                 child: Image.asset(
@@ -107,6 +109,10 @@ Future navigateToCocaine(context) async {
 
 Future navigateToHeroin(context) async {
   Navigator.push(context, MaterialPageRoute(builder: (context) => Heroin()));
+}
+
+Future navigateToMarijuana(context) async {
+  Navigator.push(context, MaterialPageRoute(builder: (context) => Marijuana()));
 }
 
 class MDMA extends StatelessWidget {
@@ -213,6 +219,34 @@ class Heroin extends StatelessWidget {
             ),
             InkWell(
               child: new Text('(AKA: Heroin)'),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class Marijuana extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("Bon Voyage"), centerTitle: true),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            InkWell(
+              child: Container(
+                child: ClipRRect(
+                  child: Image.asset('images/marijuana-structure.png'),
+                ),
+              ),
+            ),
+            InkWell(
+              child: new Text("Cannabis"),
+            ),
+            InkWell(
+              child: new Text('(AKA: Marijuana, Weed, Pot, Hemp)'),
             )
           ],
         ),

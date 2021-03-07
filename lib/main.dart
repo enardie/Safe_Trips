@@ -20,100 +20,6 @@ class MainPage extends StatelessWidget {
   }
 }
 
-// class Menu extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body: SingleChildScrollView(
-//         child: Column(
-//           children: [
-//             InkWell(
-//               onTap: () {
-//                 navigateToMDMA(context);
-//               },
-//               child: Container(
-//                   child: ClipRRect(
-//                     child: Image.asset(
-//                       'images/mdma.jpg',
-//                     ),
-//                   )),
-//             ),
-//             InkWell(
-//               onTap: () {
-//                 navigateToAlcohol(context);
-//               },
-//               child: Container(
-//                   child: ClipRRect(
-//                     child: Image.asset(
-//                       'images/alcohol.jpg',
-//                     ),
-//                   )),
-//             ),
-//             InkWell(
-//               onTap: () {
-//                 navigateToCocaine(context);
-//               },
-//               child: Container(
-//                   child: ClipRRect(
-//                     child: Image.asset(
-//                       'images/cocaine.jpg',
-//                     ),
-//                   )),
-//             ),
-//             InkWell(
-//               onTap: () {
-//                 navigateToHeroin(context);
-//               },
-//               child: Container(
-//                   child: ClipRRect(
-//                     child: Image.asset(
-//                       'images/heroin.jpg',
-//                     ),
-//                   )),
-//             ),
-//             InkWell(
-//               onTap: () {
-//                 navigateToMarijuana(context);
-//               },
-//               child: Container(
-//                   child: ClipRRect(
-//                     child: Image.asset(
-//                       'images/marijuana.jpg',
-//                     ),
-//                   )),
-//             ),
-//           ],
-//         ),
-//       ),
-      // bottomNavigationBar: BottomNavigationBar(
-      //   currentIndex: 0,
-      //   items: [
-      //     BottomNavigationBarItem(
-      //       icon: new Icon(Icons.home),
-      //       label: 'Home',
-      //       backgroundColor: Colors.black26,
-      //     ),
-      //     BottomNavigationBarItem(
-      //       icon: new Icon(Icons.explicit),
-      //       label: 'Emergency',
-      //       backgroundColor: Colors.black26,
-      //     ),
-      //     BottomNavigationBarItem(
-      //       icon: Icon(Icons.search),
-      //       label: 'Search',
-      //       backgroundColor: Colors.black26,
-      //     ),
-      //     BottomNavigationBarItem(
-      //       icon: Icon(Icons.widgets_sharp),
-      //       label: 'More',
-      //       backgroundColor: Colors.black26,
-      //     ),
-      //   ],
-      // ),
-    //);
-  //}
-//}
-
 Future navigateToMDMA(context) async {
   Navigator.push(context, MaterialPageRoute(builder: (context) => MDMA()));
 }
@@ -133,8 +39,6 @@ Future navigateToHeroin(context) async {
 Future navigateToMarijuana(context) async {
   Navigator.push(context, MaterialPageRoute(builder: (context) => Marijuana()));
 }
-
-
 
 class MDMA extends StatelessWidget {
   @override
@@ -191,7 +95,6 @@ class Alcohol extends StatelessWidget {
     );
   }
 }
-
 
 class Cocaine extends StatelessWidget {
   @override

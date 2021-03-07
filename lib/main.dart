@@ -106,7 +106,6 @@ class MDMA extends StatelessWidget {
         child: Column(
           children: [
             InkWell(
-              onTap: () {},
               child: Container(
                 child: ClipRRect(
                   child: Image.asset('images/mdma-structure.png'),
@@ -114,11 +113,9 @@ class MDMA extends StatelessWidget {
               ),
             ),
             InkWell(
-              onTap: () {},
               child: new Text("3,4-Methyl​enedioxy​methamphetamine"),
             ),
             InkWell(
-              onTap: () {},
               child: new Text('(AKA: MDMA, Ecstasy, Molly)'),
             )
           ],
@@ -137,7 +134,6 @@ class Alcohol extends StatelessWidget {
         child: Column(
           children: [
             InkWell(
-              onTap: () {},
               child: Container(
                 child: ClipRRect(
                   child: Image.asset('images/alcohol-structure.png'),
@@ -145,11 +141,9 @@ class Alcohol extends StatelessWidget {
               ),
             ),
             InkWell(
-              onTap: () {},
               child: new Text("Ethanol"),
             ),
             InkWell(
-              onTap: () {},
               child: new Text('(AKA: Alcohol)'),
             )
           ],

@@ -70,17 +70,16 @@ class MainPage extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 0, // this will be set when a new tab is tapped
         items: [
-          BottomNavigationBarItem(
+          new BottomNavigationBarItem(
             icon: new Icon(Icons.home),
             label: 'Home',
           ),
-          BottomNavigationBarItem(
-            icon: new Icon(Icons.mail),
-            label: 'Messages',
+          new BottomNavigationBarItem(
+            icon: new Icon(Icons.explicit),
+            label: 'Emergency',
           ),
-          BottomNavigationBarItem(
+          new BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: 'Profile',
           )
@@ -88,14 +87,14 @@ class MainPage extends StatelessWidget {
       ),
     );
   }
+}
 
-  Future navigateToMDMA(context) async {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => MDMA()));
-  }
+Future navigateToMDMA(context) async {
+  Navigator.push(context, MaterialPageRoute(builder: (context) => MDMA()));
+}
 
-  Future navigateToAlcohol(context) async {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => Alcohol()));
-  }
+Future navigateToAlcohol(context) async {
+  Navigator.push(context, MaterialPageRoute(builder: (context) => Alcohol()));
 }
 
 class MDMA extends StatelessWidget {

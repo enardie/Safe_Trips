@@ -13,7 +13,7 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Bon Voyage"), centerTitle: true),
+      appBar: AppBar(title: Text("Bon Voyage"), centerTitle: true, backgroundColor: Colors.pink,),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -77,18 +77,26 @@ class MainPage extends StatelessWidget {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
-          new BottomNavigationBarItem(
-            icon: new Icon(Icons.home),
-            label: 'Home',
+            BottomNavigationBarItem(
+              icon: new Icon(Icons.home),
+              label: 'Home',
+              backgroundColor: Colors.black26,
           ),
-          new BottomNavigationBarItem(
-            icon: new Icon(Icons.explicit),
-            label: 'Emergency',
+            BottomNavigationBarItem(
+              icon: new Icon(Icons.explicit),
+              label: 'Emergency',
+              backgroundColor: Colors.black26,
           ),
-          new BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
-          )
+            BottomNavigationBarItem(
+              icon: Icon(Icons.search),
+              label: 'Search',
+              backgroundColor: Colors.black26,
+          ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.widgets_sharp),
+              label: 'More',
+              backgroundColor: Colors.black26,
+          ),
         ],
       ),
     );

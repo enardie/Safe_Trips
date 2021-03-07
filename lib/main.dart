@@ -198,6 +198,15 @@ class Alcohol extends StatelessWidget {
                 ),
               ),
             ),
+            InkWell(
+              child: new Text(
+                '- Drinking only one unit for every hour is ideal',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'OpenSans',
+                ),
+              ),
+            ),
           ],
         ),
       ),

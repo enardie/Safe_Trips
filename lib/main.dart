@@ -13,18 +13,22 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Bon Voyage"), centerTitle: true, backgroundColor: Colors.pink,),
+      appBar: AppBar(
+        title: Text("Bon Voyage"),
+        centerTitle: true,
+        backgroundColor: Colors.pink,
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
             InkWell(
               onTap: () {
-                navigateToMDMA(context);
+                navigateToMarijuana(context);
               },
               child: Container(
                   child: ClipRRect(
                 child: Image.asset(
-                  'images/mdma.jpg',
+                  'images/marijuana.jpg',
                 ),
               )),
             ),
@@ -41,12 +45,12 @@ class MainPage extends StatelessWidget {
             ),
             InkWell(
               onTap: () {
-                navigateToCocaine(context);
+                navigateToMDMA(context);
               },
               child: Container(
                   child: ClipRRect(
                 child: Image.asset(
-                  'images/cocaine.jpg',
+                  'images/mdma.jpg',
                 ),
               )),
             ),
@@ -63,12 +67,12 @@ class MainPage extends StatelessWidget {
             ),
             InkWell(
               onTap: () {
-                navigateToMarijuana(context);
+                navigateToCocaine(context);
               },
               child: Container(
                   child: ClipRRect(
                 child: Image.asset(
-                  'images/marijuana.jpg',
+                  'images/cocaine.jpg',
                 ),
               )),
             ),
@@ -77,25 +81,25 @@ class MainPage extends StatelessWidget {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
-            BottomNavigationBarItem(
-              icon: new Icon(Icons.home),
-              label: 'Home',
-              backgroundColor: Colors.black26,
+          BottomNavigationBarItem(
+            icon: new Icon(Icons.home),
+            label: 'Home',
+            backgroundColor: Colors.black26,
           ),
-            BottomNavigationBarItem(
-              icon: new Icon(Icons.explicit),
-              label: 'Emergency',
-              backgroundColor: Colors.black26,
+          BottomNavigationBarItem(
+            icon: new Icon(Icons.explicit),
+            label: 'Emergency',
+            backgroundColor: Colors.black26,
           ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.search),
-              label: 'Search',
-              backgroundColor: Colors.black26,
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Search',
+            backgroundColor: Colors.black26,
           ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.widgets_sharp),
-              label: 'More',
-              backgroundColor: Colors.black26,
+          BottomNavigationBarItem(
+            icon: Icon(Icons.widgets_sharp),
+            label: 'More',
+            backgroundColor: Colors.black26,
           ),
         ], //hello
       ),

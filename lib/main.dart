@@ -87,7 +87,7 @@ class SubPage extends StatelessWidget {
               onTap: () {},
               child: Container(
                 child: ClipRRect(
-                  child: Image.asset('images/mdma-structure.jpg'),
+                  child: Image.asset('images/mdma-structure.png'),
                 ),
               ),
             ),

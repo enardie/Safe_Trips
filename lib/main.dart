@@ -7,11 +7,51 @@ void main() => runApp(
           body: SingleChildScrollView(
             child: Column(
               children: [
-                Image.asset('images/mdma.jpg'),
-                Image.asset('images/alcohol.jpg'),
-                Image.asset('images/cocaine.jpg'),
-                Image.asset('images/heroin.jpg'),
-                Image.asset('images/marijuana.jpg'),
+                InkWell(
+                  onTap: () {},
+                  child: Container(
+                      child: ClipRRect(
+                    child: Image.asset(
+                      'images/mdma.jpg',
+                    ),
+                  )),
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: Container(
+                      child: ClipRRect(
+                    child: Image.asset(
+                      'images/alcohol.jpg',
+                    ),
+                  )),
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: Container(
+                      child: ClipRRect(
+                    child: Image.asset(
+                      'images/cocaine.jpg',
+                    ),
+                  )),
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: Container(
+                      child: ClipRRect(
+                    child: Image.asset(
+                      'images/heroin.jpg',
+                    ),
+                  )),
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: Container(
+                      child: ClipRRect(
+                    child: Image.asset(
+                      'images/marijuana.jpg',
+                    ),
+                  )),
+                ),
               ],
             ),
           ),

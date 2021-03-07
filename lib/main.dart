@@ -18,7 +18,7 @@ class MainPage extends StatelessWidget {
       home: new Column(
         children: <Widget>[
           Nav(),
-
+          Button(),
         ]
       )
     );

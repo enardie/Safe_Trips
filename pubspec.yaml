@@ -46,12 +46,13 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-    # - assets/main_marijuana.jpeg
-    # - assets/main_alcohol.jpeg
-    # - assets/main_heroin.jpeg
-   #  - assets/main_cocaine.jpeg
-   #  - assets/main_mdma.jpeg
+  assets:
+      - images/alcohol.jpg
+      - images/cocaine.jpg
+      - images/heroin.jpg
+      - images/marijuana.jpg
+      - images/mdma.jpg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
